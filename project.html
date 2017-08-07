@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="app.js"></script>
+  <title>Write Me Paper Planner</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class=”row”>
+      <div class="col-md-12" style="height:120px;">
+        <img src="writemelogo.png" class="img-responsive pull-left" alt="Write Me" style="height:100px;">
+        <h1 class="align-bottom"><small>A research paper tracking and planning tool for students.</small></h1>
+      </div>
+    </div>
+
+    <div class=”row”>
+      <nav class="col-md-12 navbar navbar-light navbar-light" style="background-color: #e3f2fd;">
+        <div class="navbar-nav">
+          <span class="navbar-text">
+            <a class="nav-item nav-link" href="home.html">Home</a>
+          </span>
+          <span class="navbar-text">
+            <a class="nav-item nav-link" href="project.html">New Project</a>
+          </span>
+          <span class="navbar-text">
+            <a class="nav-item nav-link" href="signup.html">Sign Up</a>
+          </span>
+          <span class="navbar-text">
+            <a class="nav-item nav-link" href="login.html">Log In</a>
+          </span>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-12" style="margin-bottom: 20px;">
+      <h1 class="text-center"><strong>Project Dashboard: complete each field to easily structure your paper.</strong></h1>
+    </div>
+    <form class="form-inline col-md-12">
+      <div class="form-group col-md-6" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="title" placeholder="Title goes here.">
+      </div>
+      <div class="form-group col-md-6" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="header" placeholder="Header goes here.">
+      </div>
+      <div class="form-group col-md-6" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="subject" placeholder="Subject goes here.">
+      </div>
+      <div class="form-group col-md-6" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="footer" placeholder="Footer goes here.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 30px;">
+        <input type="text" class="form-control" style="width: 100%;" id="intro" placeholder="Write an intro line to your paper here.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="hypothesis" placeholder="Hypothesis goes here. What general idea are you trying to prove? That's your hypothesis.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 30px;">
+        <input type="text" class="form-control" style="width: 100%;" id="sectionA" placeholder="Support your hypothesis with idea A.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgOne" placeholder="Support idea A with a smaller idea.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgTwo" placeholder="Support idea A with a smaller idea.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgThree" placeholder="Support idea A with a smaller idea.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 20px;">
+        <input type="text" class="form-control" style="width: 100%;" id="sectionB" placeholder="Support your hypothesis with idea B.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgOne" placeholder="Support idea B with a smaller idea.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgTwo" placeholder="Support idea B with a smaller idea.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgThree" placeholder="Support idea B with a smaller idea.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 20px;">
+        <input type="text" class="form-control" style="width: 100%;" id="sectionC" placeholder="Support your hypothesis with idea C.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgOne" placeholder="Support idea C with a smaller idea.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgTwo" placeholder="Support idea C with a smaller idea.">
+      </div>
+      <div class="form-group col-md-4" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="aArgThree" placeholder="Support idea C with a smaller idea.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 30px;">
+        <input type="text" class="form-control" style="width: 100%;" id="conclusion" placeholder="Write an intro to your conclusion here.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 30px;">
+        <input type="text" class="form-control" style="width: 100%;" id="sourceOne" placeholder="Source one goes here.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="sourceTwo" placeholder="Source two goes here.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="sourceThree" placeholder="Source three goes here.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="sourceFour" placeholder="Source four goes here.">
+      </div>
+      <div class="form-group col-md-12" style="margin-top: 10px;">
+        <input type="text" class="form-control" style="width: 100%;" id="sourceFive" placeholder="Source five goes here.">
+      </div>
+      <div class="col-md-2 text-left" style="margin-top: 20px;">
+        <button type="submit" class="btn btn-default">Add a new source</button>
+      </div>
+      <div class="col-md-2 text-left" style="margin-top: 20px;">
+        <button type="submit" class="btn btn-default">Save this project</button>
+      </div>
+      <div class="col-md-12" style="margin-top: 50px;"></div>
+    </form>
+
+  </div>
+</body>
+</html>
