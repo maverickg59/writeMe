@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="app.js"></script>
+  <title>Write Me Paper Planner</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class=”row”>
+      <div class="col-md-12" style="height:120px;">
+        <img src="writemelogo.png" class="img-responsive pull-left" alt="Write Me" style="height:100px;">
+        <h1 class="align-bottom"><small>A research paper tracking and planning tool for students.</small></h1>
+      </div>
+    </div>
+    <div class=”row”>
+      <nav class="sourceCall col-md-12 navbar navbar-light navbar-light" style="background-color: #e3f2fd;">
+        <div class="navbar-nav">
+          <span class="navbar-text">
+            <a class="nav-item nav-link" href="home.html">Home</a>
+          </span>
+          <span class="navbar-text">
+            <a class="nav-item nav-link" href="project.html">New Project</a>
+          </span>
+          <span class="navbar-text">
+            <a class="nav-item nav-link" href="signup.html">Sign Up</a>
+          </span>
+          <span class="navbar-text">
+            <a class="nav-item nav-link" href="login.html">Log In</a>
+          </span>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-12">
+      <select class="custom-select col-md-1" style="margin-top: 20px;">
+        <option selected>Source Type</option>
+        <option value="1">Book</option>
+        <option value="2">Website</option>
+        <option value="3">Journal</option>
+      </select>
+      <select class="cites custom-select col-md-2 col-md-offset-1" style="margin-top: 20px;">
+        <option selected>Citation Format</option>
+        <option value="mla7">MLA</option>
+        <option value="apa">APA</option>
+        <option value="chicagob">Chicago\/Turabian</option>
+      </select>
+    </div>
+    <div>
+      <div class="col-md-4" style="margin-top: 20px;">
+        <div class="form-group row">
+          <label for="title" class="col-2 col-form-label">Title</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Book Title" id="title">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="publisher" class="col-2 col-form-label">Publisher</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Book Publisher" id="publisher">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="city" class="col-2 col-form-label">City</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="City Published" id="city">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="year" class="col-2 col-form-label">Year</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Year Published" id="year">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="authOne" class="col-2 col-form-label">Author</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Author First Name (ex: Christopher)" id="authOne">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Author Middle Name (ex: Evan)" id="authTwo">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Author Last Name (ex: White)" id="authThree">
+          </div>
+        </div>
+        <div class="col-md-2 text-left" style="margin-top: 20px; margin-bottom: 20px;">
+          <button type="submit" class="btn btn-default" id="citeButton">Cite This Source</button>
+        </div>
+        <div class="col-md-12" style="height: 100px;">
+          <h1 class="results"><small>Copy and paste in your bibliography:</small></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
