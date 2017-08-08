@@ -43,11 +43,9 @@
       </nav>
     </div>
     <div class="col-md-12">
-      <select class="custom-select col-md-1" style="margin-top: 20px;">
-        <option selected>Source Type</option>
-        <option value="1">Book</option>
-        <option value="2">Website</option>
-        <option value="3">Journal</option>
+      <select class="theSource custom-select col-md-1" style="margin-top: 20px;">
+        <option selected value="book">Book</option>
+        <option value="website">Website</option>
       </select>
       <select class="cites custom-select col-md-2 col-md-offset-1" style="margin-top: 20px;">
         <option selected>Citation Format</option>
@@ -56,7 +54,7 @@
         <option value="chicagob">Chicago\/Turabian</option>
       </select>
     </div>
-    <div>
+    <form class="bookCitation">
       <div class="col-md-4" style="margin-top: 20px;">
         <div class="form-group row">
           <label for="title" class="col-2 col-form-label">Title</label>
@@ -85,12 +83,12 @@
         <div class="form-group row">
           <label for="authOne" class="col-2 col-form-label">Author</label>
           <div class="col-4">
-            <input class="form-control" type="text" placeholder="Author First Name (ex: Christopher)" id="authOne">
+            <input class="form-control" type="text" placeholder="Author First Initial (ex: C)" id="authOne">
           </div>
         </div>
         <div class="form-group row">
           <div class="col-4">
-            <input class="form-control" type="text" placeholder="Author Middle Name (ex: Evan)" id="authTwo">
+            <input class="form-control" type="text" placeholder="Author Middle Initial (ex: E)" id="authTwo">
           </div>
         </div>
         <div class="form-group row">
@@ -98,14 +96,62 @@
             <input class="form-control" type="text" placeholder="Author Last Name (ex: White)" id="authThree">
           </div>
         </div>
-        <div class="col-md-2 text-left" style="margin-top: 20px; margin-bottom: 20px;">
-          <button type="submit" class="btn btn-default" id="citeButton">Cite This Source</button>
+      </div>
+    </form>
+
+    <form class="webCitation">
+      <div class="col-md-4" style="margin-top: 20px;">
+        <div class="form-group row">
+          <label for="title" class="col-2 col-form-label">Title</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Website Title" id="webTitle">
+          </div>
         </div>
-        <div class="col-md-12" style="height: 100px;">
-          <h1 class="results"><small>Copy and paste in your bibliography:</small></h1>
+        <div class="form-group row">
+          <label for="publisher" class="col-2 col-form-label">Owner</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Institution that owns website" id="owner">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="city" class="col-2 col-form-label">Date Published</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Date article was published (ex: 11 January 2016)" id="webDate">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="year" class="col-2 col-form-label">Date Accessed</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Date article was accessed (ex: 11 January 2016)" id="accessDate">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="authOne" class="col-2 col-form-label">Author</label>
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Author First Initial (ex: C)" id="webAuthOne">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Author Middle Initial (ex: E)" id="webAuthTwo">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-4">
+            <input class="form-control" type="text" placeholder="Author Last Name (ex: White)" id="webAuthThree">
+          </div>
         </div>
       </div>
+    </form>
+    <div class="col-md-12">
+    <div class="col-md-2 text-left" style="margin-top: 20px;">
+      <button type="submit" class="btn btn-default" id="citeButton">Cite This Source</button>
     </div>
+    <div class="col-md-12" style="height: 200px;">
+      <h1 class="results"><small>Copy and paste in your bibliography:</small></h1>
+    </div>
+  </div>
+
   </div>
 </body>
 </html>
