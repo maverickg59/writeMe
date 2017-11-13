@@ -1,3 +1,3 @@
 # Write Me
 
-![](url)
+![](https://github.com/maverickg59/writeMe/blob/master/writeMe.gif)
